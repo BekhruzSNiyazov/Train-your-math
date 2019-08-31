@@ -122,6 +122,27 @@ def first():
 @app.route("/index.html/quit.html")
 def quit():
     return render_template("quit.html")
+@app.route("/index.html/index.html/quit.html")
+def quit():
+    return render_template("quit.html")
+@app.route("/index.html/index.html/index.html/quit.html")
+def quit():
+    return render_template("quit.html")
+@app.route("/index.html/index.html/index.html/index.html/quit.html")
+def quit():
+    return render_template("quit.html")
+@app.route("/index.html/index.html/index.html/index.html/index.html/quit.html")
+def quit():
+    return render_template("quit.html")
+@app.route("/index.html/index.html/index.html/index.html/index.html/quit.html")
+def quit():
+    return render_template("quit.html")
+@app.route("/index.html/index.html/index.html/index.html/index.html/quit.html")
+def quit():
+    return render_template("quit.html")
+@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/quit.html")
+def quit():
+    return render_template("quit.html")
 
 @app.route("/index.html/index.html")
 def second():
