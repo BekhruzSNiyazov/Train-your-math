@@ -1,10 +1,9 @@
 from flask import Flask, render_template, request
 from random import randrange
-from pygame import mixer
+import os
 
-mixer.init()
-mixer.music.load("home.mp3")
-mixer.music.play()
+file = "home.mp3"
+os.system("mpg123 " + file)
 
 app = Flask(__name__)
 
