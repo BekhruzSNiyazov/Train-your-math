@@ -2,11 +2,11 @@ from flask import Flask, render_template, request
 from random import randrange
 from pygame import mixer
 
+app = Flask(__name__)
+
 mixer.init()
 mixer.music.load("home.mp3")
 mixer.music.play()
-
-app = Flask(__name__)
 
 @app.route("/")
 def home():
