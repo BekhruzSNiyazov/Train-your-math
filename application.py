@@ -8,7 +8,7 @@ def home():
     #playsound("home.mp3")
     return render_template("home.html")
 
-@app.route("/index.html/answer", methods=["GET", "POST"])
+@app.route("/index.html/answer", methods=["GET"])
 def fanswer():
     from playsound import playsound
     answer = request.args.get("answer")
