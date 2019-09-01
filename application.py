@@ -1,11 +1,5 @@
 from flask import Flask, render_template, request
 from random import randrange
-import os
-
-file = "home.mp3"
-os.system("mpg123 " + file)
-
-app = Flask(__name__)
 
 @app.route("/")
 def home():
