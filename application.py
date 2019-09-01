@@ -2,12 +2,11 @@ from flask import Flask, render_template, request
 from random import randrange
 from playsound import playsound
 
-playsound('home.mp3')
-
 app = Flask(__name__)
 
 @app.route("/")
 def home():
+    #playsound("home.mp3")
     return render_template("home.html")
 
 @app.route("/index.html/answer", methods=["GET"])
@@ -16,8 +15,10 @@ def fanswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/answer", methods=["GET"])
@@ -26,8 +27,10 @@ def sanswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/answer", methods=["GET"])
@@ -36,8 +39,10 @@ def tanswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/answer", methods=["GET"])
@@ -46,8 +51,10 @@ def foanswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
@@ -56,8 +63,10 @@ def fianswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
@@ -66,8 +75,10 @@ def sianswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
@@ -76,8 +87,10 @@ def seanswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
@@ -86,8 +99,10 @@ def enswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
@@ -96,8 +111,10 @@ def nanswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
@@ -106,8 +123,10 @@ def tenanswer():
     print(answer)
     print(num)
     if int(answer) != num:
+        playsound("incorrect.mp3")
         return render_template("incorrect.html")
     if int(answer) == num:
+        playsound("correct.mp3")
         return render_template("correct.html")
 
 @app.route("/index.html")
