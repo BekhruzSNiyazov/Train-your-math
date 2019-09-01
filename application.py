@@ -12,7 +12,7 @@ def fanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -22,7 +22,7 @@ def sanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -32,7 +32,7 @@ def tanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -42,7 +42,7 @@ def foanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -52,7 +52,7 @@ def fianswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -62,7 +62,7 @@ def sianswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -72,7 +72,7 @@ def seanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -82,7 +82,7 @@ def enswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -92,7 +92,7 @@ def nanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
@@ -102,7 +102,7 @@ def tenanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) > num or int(answer) < num:
+    if int(answer) != num:
         return render_template("incorrect.html")
     if int(answer) == num:
         return render_template("correct.html")
