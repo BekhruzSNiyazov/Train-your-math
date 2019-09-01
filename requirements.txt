@@ -2,3 +2,6 @@ flask
 flask_session
 gunicorn
 playsound
+render_template
+request
+randrange
