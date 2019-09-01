@@ -2,13 +2,14 @@ from flask import Flask, render_template, request
 from random import randrange
 from pygame import mixer
 
+mixer.init()
+mixer.music.load("home.mp3")
+mixer.music.play()
+
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    mixer.init()
-    mixer.music.load("home.mp3")
-    mixer.music.play()
     return render_template("home.html")
 
 @app.route("/index.html/answer", methods=["GET"])
