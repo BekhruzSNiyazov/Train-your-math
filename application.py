@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    #playsound("home.mp3")
+    playsound("home.mp3")
     return render_template("home.html")
 
 @app.route("/index.html/answer", methods=["GET"])
