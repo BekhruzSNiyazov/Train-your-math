@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from random import randrange
-from playsound import playsound
 
 app = Flask(__name__)
 
@@ -11,6 +10,7 @@ def home():
 
 @app.route("/index.html/answer", methods=["GET"])
 def fanswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -23,6 +23,7 @@ def fanswer():
 
 @app.route("/index.html/index.html/answer", methods=["GET"])
 def sanswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -35,6 +36,7 @@ def sanswer():
 
 @app.route("/index.html/index.html/index.html/answer", methods=["GET"])
 def tanswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -47,6 +49,7 @@ def tanswer():
 
 @app.route("/index.html/index.html/index.html/index.html/answer", methods=["GET"])
 def foanswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -59,6 +62,7 @@ def foanswer():
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
 def fianswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -71,6 +75,7 @@ def fianswer():
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
 def sianswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -83,6 +88,7 @@ def sianswer():
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
 def seanswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -95,6 +101,7 @@ def seanswer():
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
 def enswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -107,6 +114,7 @@ def enswer():
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
 def nanswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
@@ -119,6 +127,7 @@ def nanswer():
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
 def tenanswer():
+    from playsound import playsound
     answer = request.args.get("answer")
     print(answer)
     print(num)
