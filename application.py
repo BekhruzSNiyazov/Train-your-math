@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/index.html/answer", methods=["GET"])
+@app.route("/index.html/answer", methods=["GET", "POST"])
 def fanswer():
     answer = request.args.get("answer")
     print(answer)
@@ -17,7 +17,7 @@ def fanswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/answer", methods=["GET", "POST"])
 def sanswer():
     answer = request.args.get("answer")
     print(answer)
@@ -27,7 +27,7 @@ def sanswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def tanswer():
     answer = request.args.get("answer")
     print(answer)
@@ -37,7 +37,7 @@ def tanswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def foanswer():
     answer = request.args.get("answer")
     print(answer)
@@ -47,7 +47,7 @@ def foanswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def fianswer():
     answer = request.args.get("answer")
     print(answer)
@@ -57,7 +57,7 @@ def fianswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def sianswer():
     answer = request.args.get("answer")
     print(answer)
@@ -67,7 +67,7 @@ def sianswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def seanswer():
     answer = request.args.get("answer")
     print(answer)
@@ -77,7 +77,7 @@ def seanswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def enswer():
     answer = request.args.get("answer")
     print(answer)
@@ -87,7 +87,7 @@ def enswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def nanswer():
     answer = request.args.get("answer")
     print(answer)
@@ -97,7 +97,7 @@ def nanswer():
     if int(answer) == num:
         return render_template("correct.html")
 
-@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET"])
+@app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def tenanswer():
     answer = request.args.get("answer")
     print(answer)
@@ -114,7 +114,7 @@ def first():
     global num
     num = x * y
 
-    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -162,7 +162,7 @@ def second():
     global num
     num = x + y
 
-    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -174,7 +174,7 @@ def third():
     global num
     num = x * y
 
-    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -186,7 +186,7 @@ def fourth():
     global num
     num = x + y
 
-    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -198,7 +198,7 @@ def fifth():
     global num
     num = x * y
 
-    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -210,7 +210,7 @@ def sixth():
     global num
     num = x + y
 
-    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -222,7 +222,7 @@ def seventh():
     global num
     num = x * y
 
-    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -234,7 +234,7 @@ def eighth():
     global num
     num = x + y
 
-    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -246,7 +246,7 @@ def ninth():
     global num
     num = x * y
 
-    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("iindex.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
@@ -258,7 +258,7 @@ def tenth():
     global num
     num = x + y
 
-    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET">
+    return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
             <button class="ans">Check!</button>
         </form>"""
