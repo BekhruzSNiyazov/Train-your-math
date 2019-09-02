@@ -1,5 +1,10 @@
 from flask import Flask, render_template, request
 from random import randrange
+from pygame import mixer
+
+mixer.init()
+mixer.music.load("home.mp3")
+mixer.music.play()
 
 app = Flask(__name__)
 
@@ -13,17 +18,9 @@ def fanswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/answer", methods=["GET", "POST"])
 def sanswer():
@@ -31,17 +28,9 @@ def sanswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def tanswer():
@@ -49,17 +38,9 @@ def tanswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def foanswer():
@@ -67,17 +48,9 @@ def foanswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def fianswer():
@@ -85,17 +58,9 @@ def fianswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def sianswer():
@@ -103,17 +68,9 @@ def sianswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def seanswer():
@@ -121,17 +78,9 @@ def seanswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def enswer():
@@ -139,17 +88,9 @@ def enswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def nanswer():
@@ -157,17 +98,9 @@ def nanswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/index.html/answer", methods=["GET", "POST"])
 def tenanswer():
@@ -175,17 +108,9 @@ def tenanswer():
     print(answer)
     print(num)
     if int(answer) != num:
-        if int(answer) != num:
-            if int(answer) != num:
-                return render_template("incorrect.html")
-            if int(answer) == num:
-                return render_template("correct.html")
+        return render_template("incorrect.html")
     if int(answer) == num:
-        if int(answer) == num:
-            if int(answer) == num:
-                return render_template("correct.html")
-            if int(answer) != num:
-                return render_template("incorrect.html")    
+        return render_template("correct.html")
 
 @app.route("/index.html")
 def first():
