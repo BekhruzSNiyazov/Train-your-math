@@ -12,9 +12,9 @@ def fanswer():
     answer = request.args.get("answer")
     print(answer)
     print(num)
-    if int(answer) != num:
+    if answer != str(num):
         return render_template("incorrect.html")
-    if int(answer) == num:
+    if answer == str(num):
         return render_template("correct.html")
 
 
