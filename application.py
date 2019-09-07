@@ -65,10 +65,11 @@ def danswer():
 
 @app.route("/index.html")
 def first():
-    x = randrange(100)
-    y = randrange(150)
+    a = randrange(1000)
+    x = randrange(500)
+    y = a - x
     global num
-    num = x + y
+    num = a
 
     return render_template("index.html", x=x, y=y) + """<form action="index.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
@@ -77,10 +78,11 @@ def first():
 
 @app.route("/multiplication.html")
 def fmirst():
+    a = randrange(100)
     x = randrange(10)
-    y = randrange(15)
+    y = a / x
     global num
-    num = x * y
+    num = a
 
     return render_template("multiplication.html", x=x, y=y) + """<form action="multiplication.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
@@ -105,10 +107,11 @@ def osquit():
 
 @app.route("/subtraction.html")
 def fsirst():
-    x = randrange(15)
-    y = randrange(10)
+    a = randrange(20)
+    x = randrange(100)
+    y = x - a
     global num
-    num = x - y
+    num = a
 
     return render_template("subtraction.html", x=x, y=y) + """<form action="subtraction.html/answer" method="GET", "POST">
             <input type="number" name="answer" placeholder="Enter answer here" class="ans">
