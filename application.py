@@ -1,5 +1,8 @@
 from flask import Flask, render_template, request
 from random import randrange, choice
+import playsound
+
+playsound.playsound("music.mp3")
 
 app = Flask(__name__)
 
